@@ -12,3 +12,7 @@ output "subnet_ids" {
   description = "List of Subnet IDs"
   value       = [for subnet in azurerm_subnet.this : subnet.id]
 }
+output "subnet_names" {
+  description = "Names of the created Subnets"
+  value       = [for subnet in azurerm_subnet.this : subnet.name]
+}
