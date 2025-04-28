@@ -1,4 +1,4 @@
-variable "azurerm_virtual_network" {
+variable "vnet_name" {
   description = "Name of the VNET"
   type        = string
 }
